@@ -3,6 +3,13 @@
     background-color: #f8f9fa;
     border: none;
     margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.list-group-item:hover {
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s;
 }
 
 .container h1 {
@@ -16,6 +23,7 @@
     border-radius: 10px;
     margin-bottom: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
 }
 
 .card-title {
@@ -209,5 +217,98 @@ h2 {
 .social-icons a:hover {
     color: #0056b3;
 }
+
+
+.countdown {
+    text-align: center;
+}
+
+#timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#timer span {
+    font-size: 36px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Add these styles to your existing CSS or styles.css file */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.theme-toggle input[type="checkbox"] {
+    display: none;
+}
+
+.theme-toggle label {
+    display: block;
+    width: 50px;
+    height: 24px;
+    background-color: #ccc;
+    border-radius: 24px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.theme-toggle label:after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: left 0.3s;
+}
+
+.theme-toggle input:checked + label {
+    background-color: #007bff;
+}
+
+.theme-toggle input:checked + label:after {
+    left: 26px;
+}
+
+/* CSS */
+body.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-dark .navbar-brand {
+    color: #fff;
+}
+
+.footer-dark {
+    background-color: #333;
+    color: #fff;
+}
+
+.footer-dark a {
+    color: #fff;
+}
+
+.input-dark {
+    background-color: #333;
+    color: #fff;
+}
+
+
 
 
