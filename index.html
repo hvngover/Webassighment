@@ -4,21 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Интерьеры для жизни</title>
-
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
     <link rel="icon" href="https://static.tildacdn.com/tild3133-6437-4363-a338-666464663239/favicon_1.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles1.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
     <script src="theme-toggle.js"></script>
+    <script src="script.js"></script>
 
 </head>
 
+
 <body>
-
-
-
 
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -72,6 +71,8 @@
     <h1 class="display-4">Интерьеры для жизни</h1>
 </section>
 
+
+<!-- Добавьте этот код в ваш HTML -->
 <div class="countdown">
     <h2>Акции -40% Закончится:</h2>
     <div id="timer">
@@ -81,7 +82,18 @@
         <span id="seconds">00</span>
     </div>
 </div>
-<script src="script.js"></script>
+
+<hr class="border">
+
+<div class="todo-list">
+    <h2>To-Do List</h2>
+    <label for="taskInput"></label>
+    <input type="text" id="taskInput" placeholder="Add a new task...">
+    <button id="addTask">Add</button>
+    <ul id="taskList"></ul>
+</div>
+
+
 
 
 <section class="container mt-5">
@@ -121,7 +133,7 @@
     </div>
     <div class="row">
         <div class="col-12 text-center mt-4">
-            <a class="btn btn-primary" href="about.html">Подробнее</a>
+            <a id="detailsButton" class="btn btn-primary" href="about.html">Подробнее</a>
         </div>
     </div>
 </section>
@@ -178,7 +190,7 @@
 </section>
 
 <hr class="border">
-<footer class="container-fluid mt-5">
+<footer class="container mt-5">
     <div class="row">
         <div class="col text-center">
             <img src="https://static.tildacdn.com/tild3439-3365-4039-a363-663939636662/Leplan_logo.svg" alt="Логотип">
@@ -193,7 +205,7 @@
             </div>
         </div>
         <div class="col-md-6">
-            <form action="" method="post" class="contact-form" id="contactForm">
+            <form action="" method="post" class="contact-form">
                 <div class="form-group">
                     <label for="name">Имя:</label>
                     <input type="text" id="name" name="name" class="form-control" required>
@@ -208,6 +220,14 @@
                 </div>
                 <button type="submit" class="btn btn-primary">Отправить</button>
             </form>
+            <p id="error-message" class="text-danger"></p>
+            <p id="success-message" class="text-success"></p>
+
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col text-center">
+            <p class="success-message">Ваше сообщение успешно отправлено!</p>
         </div>
     </div>
     <div class="row mt-3">
@@ -216,6 +236,6 @@
         </div>
     </div>
 </footer>
-<script src="script.js"></script>
+<script src="script2.js"></script>
 </body>
 </html>
