@@ -1,0 +1,35 @@
+/* Стили для сообщений об ошибках */
+.text-danger {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Стили для успешного сообщения */
+.text-success {
+    color: green;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Стили для выделения некорректного поля */
+.form-control.is-invalid {
+    border-color: #dc3545;
+}
+
+/* Опциональные стили для кнопки отправки */
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+
+

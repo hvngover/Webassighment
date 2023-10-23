@@ -1,150 +1,94 @@
-
-/* Стили для анимации */
-.success-message {
-    display: none;
-    color: green;
-    font-weight: bold;
-    font-size: 1.2rem;
-    animation: fadeInOut 2s ease-in-out;
-}
-
-/* Другие стили... */
-
-
-@keyframes fadeInOut {
-    0% {
-        opacity: 0;
-    }
-    10% {
-        opacity: 1;
-    }
-    90% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-
-/* Стили для списка дел */
-.todo-list {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-#task-list {
+/* styles.css */
+#taskList {
     list-style: none;
     padding: 0;
 }
 
-#task-list li {
+.list-group-item {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
-}
-
-#task-list li.completed {
-    text-decoration: line-through;
-    color: #999;
-}
-
-#task-list li:hover button {
-    display: inline;
-}
-
-#task-list li button {
-    display: none;
-    margin-left: auto;
-    padding: 5px 10px;
-    background-color: #ff5757;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-#task-list li button:hover {
-    background-color: #ff3333;
-}
-
-#new-task {
-    width: 70%;
-    padding: 8px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-#add-task, #clear-completed {
-    margin-left: 10px;
-    padding: 8px 15px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-#add-task:hover, #clear-completed:hover {
-    background-color: #555;
-}
-
-
-/* Стили для To-Do List */
-h2 {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 24px;
-}
-
-#taskInput {
-    width: 100%;
     padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
+    margin: 5px 0;
+    background-color: #f9f9f9;
     border-radius: 5px;
-    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease;
 }
 
-#addTask {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
+.list-group-item .btn-group {
+    margin-right: 10px;
 }
-
-#addTask:hover {
-    background-color: #45a049;
-}
-
-
-
 
 .completed {
-    background-color: #d3ffd3;
+    background-color: #c0e7a0;
+}
+
+.completed span {
     text-decoration: line-through;
+    color: #555;
 }
 
-.delete, .complete {
-    background-color: #f44336;
-    color: white;
-    border: none;
-    border-radius: 5px;
+.btn-primary, .btn-danger, .btn-success {
+    margin: 0;
     padding: 5px 10px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-left: 5px;
+    transition: background-color 0.2s ease;
 }
 
-.delete:hover, .complete:hover {
-    background-color: #d32f2f;
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
 }
 
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+    color: #fff;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group-append {
+    position: relative;
+    top: -1px;
+}
+
+/* Optional: Add a box shadow to the buttons on hover for a more interactive effect */
+.btn-primary:hover, .btn-danger:hover, .btn-success:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+.text-danger {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.error {
+    opacity: 1;
+}
