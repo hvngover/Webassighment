@@ -11,17 +11,36 @@
     <link rel="stylesheet" href="../styles/styles1.css">
     <script src="../Javascript/script2.js"></script>
     <script src="../Javascript/script.js"></script>
+    <script src="../Javascript/audio.js"></script>
     <script src="../Javascript/countdown.js"></script>
     <script src="../Javascript/checker.js"></script>
     <link rel="stylesheet" href="../styles/countdown.css">
     <link rel="stylesheet" href="../styles/checker.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const clickSound = document.getElementById('clickSound');
+
+            function playClickSound() {
+                clickSound.currentTime = 0;
+                clickSound.play();
+            }
+
+            document.body.addEventListener('click', playClickSound);
+        });
+    </script>
+
 
 
 </head>
 
 
 <body>
+<button id="myButton">Нажмите, чтобы услышать звук</button>
 
+<audio id="clickSound">
+    <source src="path/to/sound.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
