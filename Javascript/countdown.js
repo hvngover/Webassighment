@@ -1,5 +1,5 @@
 // Set the countdown date and time
-const countdownDate = new Date(2023, 9, 27, 23, 59, 59).getTime();
+const countdownDate = new Date(2023, 10, 27, 23, 59, 59).getTime();
 
 // Update the countdown every second
 const countdownTimer = setInterval(function() {
