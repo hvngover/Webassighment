@@ -1,19 +1,31 @@
-.puzzle-container {
-    width: 300px;
-    height: 300px;
-    border: 1px solid #000;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+#dropZone, #furniture {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    min-height: 200px;
+    margin-bottom: 20px;
 }
 
-.puzzle-piece {
-    border: 1px solid #000;
-    transition: all 0.3s ease;
-    cursor: pointer;
+#dropBox1, #dropBox2, #dropBox3, #dropBox4 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    border: 1px solid #aaaaaa;
+    padding: 1rem;
+    background-color: #f0f0f0;
 }
 
-.puzzle-piece img {
-    width: 100%;
-    height: 100%;
+img {
+    height: 100px;
+    object-fit: cover;
+    width: 100px;
+    margin: 5px;
+}
+
+button {
+    display: block;
+    margin-top: 20px;
 }

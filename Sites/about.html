@@ -11,6 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
     <script src="theme-toggle.js"></script>
+    <link rel="stylesheet" href="/styles/video.css">
 
 </head>
 
@@ -37,6 +38,15 @@
                 <li class="nav-item">
                     <a class="nav-link" href="about.html">О студии</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Puzzle.html">Game</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Регистрация</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="quiz.html">Quiz</a>
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Контакты
@@ -48,11 +58,6 @@
                 </li>
             </ul>
         </div>
-    </div>
-    <div class="theme-toggle">
-        <input class="pristine" type="checkbox" name="toggle" value="on" id="theme-toggle">
-
-        <label for="theme-toggle"></label>
     </div>
 </nav>
 
@@ -78,6 +83,10 @@
 </section>
 
 <hr class="border">
+
+<video id="video-background" autoplay loop muted>
+    <source src="../video/1234.mp4" type="video/mp4">
+</video>
 
 
 <footer class="container mt-5">
@@ -118,6 +127,16 @@
         </div>
     </div>
 </footer>
+
+<section class="container mt-5">
+    <h4 class="text-center">Подписывайтесь на нас в социальных сетях:</h4>
+    <div class="social-icons mt-4 text-center">
+        <a href="#" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-whatsapp fa-3x"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-telegram fa-3x"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-facebook fa-3x"></i></a>
+    </div>
+</section>
 <script src="../Javascript/script.js"></script>
 </body>
 </html>

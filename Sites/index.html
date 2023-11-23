@@ -14,8 +14,11 @@
     <script src="../Javascript/audio.js"></script>
     <script src="../Javascript/countdown.js"></script>
     <script src="../Javascript/checker.js"></script>
+
     <link rel="stylesheet" href="../styles/countdown.css">
     <link rel="stylesheet" href="../styles/checker.css">
+    <link rel="stylesheet" href="../styles/topbutton.css">
+    <script src="../Javascript/topbutton.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const clickSound = document.getElementById('clickSound');
@@ -65,7 +68,13 @@
                     <a class="nav-link" href="about.html">О студии</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Puzzle.html">Puzzle</a>
+                    <a class="nav-link" href="Puzzle.html">Game</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Регистрация</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="quiz.html">Quiz</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -160,7 +169,6 @@
     </div>
     <div class="row">
         <div class="col-md-6">
-            <p>Современные чистые интерьеры в стиле минимализма. Мы делаем акцент на комфорте и красоте, избавляя помещение от визуального шума и излишнего украшательства.</p>
         </div>
         <div class="col-md-6">
             <p>Наша городская жизнь наполнена визуальным шумом и бесконечным потоком информации: цветные машины, яркая реклама, билборды. Все это накрывает нас с головой и сильно эмоционально давит.</p>
@@ -267,5 +275,7 @@
         </div>
     </div>
 </footer>
+<button onclick="topFunction()" id="scrollTopBtn" title="Go to top">↑</button>
+
 </body>
 </html>

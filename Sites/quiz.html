@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" href="https://static.tildacdn.com/tild3133-6437-4363-a338-666464663239/favicon_1.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/styles1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/animation.css">
+    <script src="../Javascript/animation.js"></script>
+    <script src="../Javascript/jss.js"></script>
+    <script src="../Javascript/EventListener.js"></script>
+    <script src="/Javascript/modal.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .question {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+        .question p {
+            font-weight: bold;
+        }
+        .answer {
+            margin-bottom: 5px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .correct {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .incorrect {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="https://static.tildacdn.com/tild3439-3365-4039-a363-663939636662/Leplan_logo.svg" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Проекты</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Услуги</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">О студии</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Puzzle.html">Game</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Регистрация</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="quiz.html">Quiz</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Контакты
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Телефон</a></li>
+                        <li><a class="dropdown-item" href="#">Email</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container">
+    <h2>Design Furniture Quiz</h2>
+    <form id="quizForm">
+        <!-- Questions here -->
+        <div class="question">
+            <p>1. What design style is characterized by minimalism and functionality?</p>
+            <label class="answer"><input type="radio" name="q1" value="A"> Art Deco</label><br>
+            <label class="answer"><input type="radio" name="q1" value="B"> Victorian</label><br>
+            <label class="answer"><input type="radio" name="q1" value="C"> Scandinavian</label><br>
+            <label class="answer"><input type="radio" name="q1" value="D"> Baroque</label>
+        </div>
+
+        <div class="question">
+            <p>2. What is a defining feature of Scandinavian furniture design?</p>
+            <label class="answer"><input type="radio" name="q1" value="A"> A) Bright and bold colors</label><br>
+            <label class="answer"><input type="radio" name="q1" value="B"> B) Ornate carvings</label><br>
+            <label class="answer"><input type="radio" name="q1" value="C"> C) Minimalist and functional</label><br>
+            <label class="answer"><input type="radio" name="q1" value="D"> D) Heavy use of metal</label>
+        </div>
+
+        <div class="question">
+            <p>3. Which era is known for the introduction of the modernist furniture design?</p>
+            <label class="answer"><input type="radio" name="q1" value="A"> A) Victorian Era</label><br>
+            <label class="answer"><input type="radio" name="q1" value="B"> B) Mid-century Modern (1950s)</label><br>
+            <label class="answer"><input type="radio" name="q1" value="C"> C) Art Deco (1920s)</label><br>
+            <label class="answer"><input type="radio" name="q1" value="D"> D) Contemporary (21st Century)</label>
+        </div>
+
+        <div class="question">
+            <p>4. What type of material is commonly used in industrial furniture design?</p>
+            <label class="answer"><input type="radio" name="q1" value="A"> A) Glass</label><br>
+            <label class="answer"><input type="radio" name="q1" value="B"> B) Plastic</label><br>
+            <label class="answer"><input type="radio" name="q1" value="C"> C) Steel and wood</label><br>
+            <label class="answer"><input type="radio" name="q1" value="D"> D) Bamboo</label>
+        </div>
+
+        <div class="question">
+            <p>5. What is characteristic of Art Nouveau furniture design?</p>
+            <label class="answer"><input type="radio" name="q1" value="A"> A) Le Corbusier</label><br>
+            <label class="answer"><input type="radio" name="q1" value="B"> B) Charles Eames</label><br>
+            <label class="answer"><input type="radio" name="q1" value="C"> C) Arne Jacobsen</label><br>
+            <label class="answer"><input type="radio" name="q1" value="D"> D) Philippe Starck</label>
+        </div>
+
+        <div class="question">
+            <p>6. Eames Lounge Chair is a classic in which furniture style?</p>
+            <label class="answer"><input type="radio" name="q1" value="A"> A) Geometric shapes and lines</label><br>
+            <label class="answer"><input type="radio" name="q1" value="B"> B) Natural forms and structures</label><br>
+            <label class="answer"><input type="radio" name="q1" value="C"> C) Gothic-inspired designs</label><br>
+            <label class="answer"><input type="radio" name="q1" value="D"> D) Minimalist and space-saving</label>
+        </div>
+
+        <div class="question">
+            <p>7. What is a chesterfield?</p>
+            <label class="answer"><input type="radio" name="q1" value="A"> A) Traditional</label><br>
+            <label class="answer"><input type="radio" name="q1" value="B"> B) Modernist</label><br>
+            <label class="answer"><input type="radio" name="q1" value="C"> C) Shabby Chic</label><br>
+            <label class="answer"><input type="radio" name="q1" value="D"> D) Rustic</label>
+        </div>
+
+        <div class="question">
+            <p>8. Which of the following is a principle of sustainable furniture design?</p>
+            <label class="answer"><input type="radio" name="q1" value="A"> A) A type of desk</label><br>
+            <label class="answer"><input type="radio" name="q1" value="B"> B) A type of lamp</label><br>
+            <label class="answer"><input type="radio" name="q1" value="C"> C) A type of sofa</label><br>
+            <label class="answer"><input type="radio" name="q1" value="D"> D) A type of bed</label>
+        </div>
+
+        <div class="question">
+            <p>9. Bauhaus furniture is known for what?</p>
+            <label class="answer"><input type="radio" name="q1" value="A"> A) Use of rare materials</label><br>
+            <label class="answer"><input type="radio" name="q1" value="B"> B) Mass production techniques</label><br>
+            <label class="answer"><input type="radio" name="q1" value="C"> C) Use of recycled materials</label><br>
+            <label class="answer"><input type="radio" name="q1" value="D"> D) Emphasis on ornamental details</label>
+        </div>
+
+        <div class="question">
+            <p>10. What is the main characteristic of Shaker-style furniture?</p>
+            <label class="answer"><input type="radio" name="q1" value="A"> A) Intricate carvings and decorations</label><br>
+            <label class="answer"><input type="radio" name="q1" value="B"> B) Bold asymmetrical designs</label><br>
+            <label class="answer"><input type="radio" name="q1" value="C"> C) Simple, functional, and well-made</label><br>
+            <label class="answer"><input type="radio" name="q1" value="D"> D) Use of vibrant, contrasting colors</label>
+        </div>
+
+
+        <button type="button" onclick="checkAnswers()">Submit</button>
+    </form>
+</div>
+
+<script>
+    function checkAnswers() {
+        var correctAnswers = {'q1': 'C', 'q2': 'D', 'q3': 'A', 'q4': 'A', 'q5': 'B', 'q6': 'C', 'q7': 'B', 'q8': 'C', 'q9': 'B', 'q10': 'B'/* Correct answers for the rest of the questions */};
+        var form = document.getElementById('quizForm');
+        var totalQuestions = Object.keys(correctAnswers).length;
+        var score = 0;
+
+        for (var i = 1; i <= totalQuestions; i++) {
+            var radios = form['q' + i];
+            for (var j = 0; j < radios.length; j++) {
+                var radio = radios[j];
+                if (radio.value === correctAnswers['q' + i]) {
+                    if (radio.checked) score++;
+                    radio.parentNode.classList.add('correct');
+                } else if (radio.checked) {
+                    radio.parentNode.classList.add('incorrect');
+                }
+            }
+        }
+
+        alert("You scored " + score + "/" + totalQuestions);
+    }
+</script>
+
+
+</body>
+</html>

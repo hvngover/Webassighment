@@ -1,14 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Puzzle</title>
-    <link rel="stylesheet" type="text/css" href="../styles/puzzle.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Puzzle</title>
+    <link rel="stylesheet" href="/styles/puzzle.css">
 </head>
 <body>
-<h1>Puzzle</h1>
-<div class="puzzle-container" id="puzzle-container">
-    <!-- Пазлы будут здесь -->
+<div id="dropZone">
+    <div id="dropBox1" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <p>Bed</p>
+    </div>
+    <div id="dropBox2" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <p>Chair</p>
+    </div>
+    <div id="dropBox3" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <p>Sofa</p>
+    </div>
+    <div id="dropBox4" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <p>Table</p>
+    </div>
 </div>
-<script src="../Javascript/puzzle.js"></script>
+
+<div id="furniture" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <!-- Replace these URLs with actual image URLs -->
+    <img id="bed" src="https://i.pinimg.com/originals/0f/14/75/0f1475829b4cd7ea9e26d9afac3236a7.jpg" draggable="true" ondragstart="drag(event)" width="100" />
+    <img id="chair" src="https://img.alicdn.com/imgextra/i2/329293405/O1CN01IyqiqQ1b1XCHnaGfB_!!329293405.jpg" draggable="true" ondragstart="drag(event)" width="100" />
+    <img id="sofa" src="https://www.sohomod.com/blog/wp-content/uploads/2014/11/mart-1.jpg" draggable="true" ondragstart="drag(event)" width="100" />
+    <img id="table" src="https://www.celebrationspartyrentals.com/wp-content/uploads/2016/11/round-farm-table.png" draggable="true" ondragstart="drag(event)" width="100" />
+</div>
+
+<a href="index.html" class="menu-button">Return to Main Menu</a>
+
+<script src="/Javascript/puzzle.js"></script>
 </body>
 </html>
